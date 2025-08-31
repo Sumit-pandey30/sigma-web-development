@@ -4,54 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form web page</title>
+    <title>css boxmodel</title>
+    <style>
+        .box {
+            background-color: aqua;
+
+        }
+
+        .box1 {
+            color: red;
+            margin: 35px;
+            padding: 10px solid blue;
+            border: 2px solid blueviolet;
+        }
+
+        .box2 {
+            color: rgb(228, 228, 11);
+            margin: 25px;
+            padding:10px solid red;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Form fill up apply</h1>
-    <form action="post">
-        <div>
-            <label for="username"> Enter your username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username">
-        </div>
-        <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">male
-            </label>
-            <input type="radio" id="feamle" name="gender" value="feamle">
-            <label for="feamle">Female
-
-            </label>
-        </div>
-        <div>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <label for="subscribe"> subscribe to newsletter
-        </div>
-        <div>
-            </label>
-            <input type="checkbox" id="unsubscribe" name="unsubscribe" value="no">
-            <label for="unsubscribe"> unsubscribe to newsletter</label>
-        </div>
-        <div>
-            <textarea name="comment" cols="30" rows="4"> Enter your comment
-              
-            </textarea>
-
-        </div>
-        <div>
-            <select name="select" id="fruits">
-                <option value="ear flow blood">Ear flow blood</option>
-                <option value="head flow blood">head flow blood</option>
-                <option value="accident">accident</option>
-                <option value="fire">fire</option>
-                <option value="frakecher">frakecher</option>
-
-            </select>
-        </div>
-        <input type="text" id="username" placeholder="Enter only capital letter">
-        z
-
-    </form>
+    <div class="box box1">"the box is 1" </div>
+    <div class="box box2">"the box is 2" </div>
 </body>
 
 </html>
